@@ -5,6 +5,7 @@
         <v-row>
           <v-col>
             <h2>Detailed Calories in the deserts</h2>
+            <p>Props received and the value is: {{title}}</p>
           </v-col>
         </v-row>
         <v-row>
@@ -107,6 +108,7 @@ export default {
       ],
     };
   },
+  props:['title'],
   methods: {
     addBtn() {
       if (this.name.length > 0) {
